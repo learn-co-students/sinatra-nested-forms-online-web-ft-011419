@@ -1,1 +1,45 @@
 <h1>Make your form here</h1>
+#forms have a label - input - type -id and a 'button'
+<h2>Pirate</h2>
+#if we wanted to have multiple hashes we can use <% num.times do %> followed by lines similar to the one below
+#to create a line break use </br> at the end of each line
+<form action="/pirates" method="POST">
+
+<label for="pirate_name">Name</label>
+<input id="pirate_name" type="text" name="pirate[name]"/>
+
+<label for="pirate_weight">Weight</label>
+<input id="pirate_weight" type="text" name="pirate[weight]"/>
+
+<label for "pirate_height">Height</label>
+<input id="pirate_height" type="text" name="pirate[height]"/>
+
+<h2>Ships</h2>
+
+
+
+#Pirate Ship1
+<label for="ship_name_1">Name</label>
+<input id="ship_name_1" type="text" name="pirate[][ships][name]"/>
+
+<label for="ship_type_1">Type</label>
+<input id="ship_type_1" type="text" name="pirate[][ships][type]">
+
+<label for="ship_booty_1">Booty</label>
+<input id="ship_booty_1" type="text" name="pirate[][ships][booty]">
+
+#Pirate Ship 2
+
+
+<label for="ship_name_2">Name</label>  
+<input id="ship_name_2" type="text" name="pirate[][ships][name]">
+
+<label for="ship_type_2">Type</label>   
+<input id="ship_type_2" type="text" name="pirate[][ships][type]">
+
+<label for="ship_booty_2">Booty</label>  
+<input id="ship_booty_2" type="text" name="pirate[][ships][booty]">
+
+<button type="submit">Submit</button>
+
+</form>
