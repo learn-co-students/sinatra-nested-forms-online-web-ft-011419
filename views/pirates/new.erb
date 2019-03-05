@@ -1,8 +1,11 @@
 <h1>Make your form here</h1>
+
 #forms have a label - input - type -id and a 'button'
 <h2>Pirate</h2>
+
 #if we wanted to have multiple hashes we can use <% num.times do %> followed by lines similar to the one below
 #to create a line break use </br> at the end of each line
+
 <form action="/pirates" method="POST">
 
 <label for="pirate_name">Name</label>
@@ -29,8 +32,6 @@
 <input id="ship_booty_1" type="text" name="pirate[][ships][booty]">
 
 #Pirate Ship 2
-
-
 <label for="ship_name_2">Name</label>  
 <input id="ship_name_2" type="text" name="pirate[][ships][name]">
 
@@ -40,6 +41,7 @@
 <label for="ship_booty_2">Booty</label>  
 <input id="ship_booty_2" type="text" name="pirate[][ships][booty]">
 
+#submit button
 <button type="submit">Submit</button>
 
 </form>
