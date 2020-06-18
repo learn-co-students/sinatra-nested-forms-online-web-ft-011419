@@ -1,0 +1,10 @@
+<p>Name: <%= ships[0].name %> a name fit for a pirate's ship aarrgg!</p></br>
+<p>Type: <%= ships[0].type %> a good type for such a journey!</p></br>
+<p>Booty:<%= ships[0].booty %> what a plunder!</p></br>
+</br>
+
+<h3>Display your second ship here</h3>
+<p>Name: <%= ships[1].name %> a name fit for a pirate's ship aarrgg!</p></br>
+<p>Type: <%= ships[1].type %> a good type for such a journey!</p></br>
+<p>Booty:<%= ships[1].booty %> what a plunder!</p></br>
+</div>
